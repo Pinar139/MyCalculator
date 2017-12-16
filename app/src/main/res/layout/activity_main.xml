@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/duvar"
+    tools:context="com.example.pinarmnkl.mycalculator.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:text="1.Sayi Girin"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_birinciSayi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginRight="37dp"
+        android:background="@android:color/background_light"
+        android:ems="8"
+        android:inputType="number"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/et_ikinciSayi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_birinciSayi"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/background_light"
+        android:ems="8"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_ikinciSayi"
+        android:layout_alignBottom="@+id/et_ikinciSayi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="2.Sayi Girin"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/tv_sonuc"
+        android:layout_marginTop="10dp"
+        android:text="Sonuç:"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_sonuc"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:background="@android:color/background_light"
+        android:textSize="20sp"
+        android:layout_above="@+id/btn_topla"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="17dp" />
+
+    <Button
+        android:text="Topla"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_topla"
+        android:layout_centerVertical="true"
+        android:background="@drawable/flat_buton"
+        android:layout_width="500dp"
+        android:layout_marginTop="5dp" />
+        />
+
+    <Button
+        android:text="Temizle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_temizle"
+        android:layout_below="@+id/btn_bol"
+        android:background="@drawable/flat_buton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:text="Böl"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_bol"
+        android:layout_below="@+id/btn_carp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/flat_buton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:text="Çarp"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_carp"
+        android:layout_below="@+id/btn_cikar"
+        android:background="@drawable/flat_buton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:text="Çıkar"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_cikar"
+        android:background="@drawable/flat_buton"
+        android:layout_below="@+id/btn_topla"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>
